@@ -1,0 +1,162 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+
+#checkout {
+  color: white;
+  font-size: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Inter", sans-serif;
+}
+
+#checkout h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 120px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: red;
+}
+
+#isValid {
+  display: none;
+}
+
+main h1 {
+  margin-block-start: 2em;
+  margin-block-end: 0em;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.numberInfo,
+.adressInfo,
+.exit,
+.visaOrMastercard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.month,
+.year {
+  width: 40px;
+}
+
+.security {
+  display: flex;
+  flex-direction: column;
+}
+
+.adressInfo input {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+#cancel,
+#pay {
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  border-color: rgba(216, 210, 210, 1);
+  border-width: 3px;
+  border-style: solid;
+  font-family: "Inter", sans-serif;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#shipping img {
+  height: 20px;
+  width: 20px;
+}
+
+#payment img,
+#review img {
+  height: 23px;
+  width: 23px;
+}
+
+#cancel {
+  border-color: rgba(50, 190, 166, 1);
+  background-color: white;
+}
+
+#pay {
+  background-color: rgba(50, 190, 166, 1);
+  border-color: rgba(50, 190, 166, 1);
+  color: white;
+}
+
+#pay,
+#cancel {
+  margin: 10px 0px 0px 0px;
+  width: 170px;
+  height: 38px;
+  font-weight: 500;
+}
+
+.exit {
+  margin: 20px 0px 0px 0px;
+}
+
+#isValid {
+  margin: 5px 0px 0px 0px;
+  color: red;
+  font-size: 14px;
+}
+
+#company {
+  display: none;
+}
+
+.visaOrMastercard {
+  justify-content: space-between;
+}
+
+.visaOrMastercard img {
+  width: 70px;
+  height: 40px;
+}

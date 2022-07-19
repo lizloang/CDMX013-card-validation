@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <div id="checkout">
+        <img
+          src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/poodle-dog-silhouette-kevin-garbes.jpg"
+        />
+        <h1>Checkout</h1>
+      </div>
+      <div class="process">
+        <div id="shipping">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/716/716225.png"
+            alt="✅"
+          />
+          Envío
+        </div>
+        <div id="payment">
+          <img
+            src="https://cdn-icons.flaticon.com/png/512/3841/premium/3841714.png?token=exp=1658243376~hmac=33f0c0fe8c05ddcd56b11bd4bbb17f17"
+          />
+          Pago
+        </div>
+        <div id="review">
+          <img
+            src="https://cdn-icons.flaticon.com/png/512/3841/premium/3841715.png?token=exp=1658243386~hmac=4a4b3a7e23dfa0674b23ba8145b8e76a"
+          />
+          Resumen
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="formulario">
+        <h1>Agregar detalles de tarjeta</h1>
+        <div>
+          <label id="name" for="name"> Nombre del titular<span>* </span></label
+          ><br />
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            required
+            placeholder="Nombre Apellido"
+          />
+        </div>
+        <div>
+          <div class="visaOrMastercard">
+            <label id="number" for="number">
+              Número de tarjeta<span>* </span>
+            </label>
+            <div id="company"></div>
+          </div>
+
+          <br />
+          <input
+            type="number"
+            name="fnumber"
+            id="fnumber"
+            required
+            placeholder="**** **** **** ****"
+          />
+          <p id="isValid"></p>
+        </div>
+        <div class="numberInfo">
+          <div class="date">
+            <label id="date" for="date">
+              Fecha de expiración<span>* </span> </label
+            ><br />
+            <input class="month" type="text" required placeholder="MM" />
+            <input class="year" type="text" required placeholder="YY" />
+          </div>
+          <div class="security">
+            <label id="security" for="security"> CVC<span>* </span> </label>
+            <input
+              type="text"
+              name="fsecurity"
+              id="fdate"
+              required
+              placeholder="123"
+            />
+          </div>
+        </div>
+        <div class="adressInfo">
+          <div>
+            <label id="country" for="country"> Country<span>* </span></label>
+            <input
+              type="text"
+              name="fcountry"
+              id="fcountry"
+              required
+              placeholder="México"
+            />
+          </div>
+          <div>
+            <label id="zip" for="zip">ZIP code<span>* </span> </label>
+            <input
+              type="text"
+              name="fzip"
+              id="fzip"
+              required
+              placeholder="12345"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="exit">
+        <button id="cancel" type="reset">Cancelar</button>
+        <button id="pay" type="submit">Pagar</button>
+      </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
