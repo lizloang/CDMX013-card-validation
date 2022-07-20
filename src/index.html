@@ -42,7 +42,7 @@
       </div>
     </header>
     <main>
-      <div class="formulario">
+      <form class="formulario" action="resumen" method="get" id="formulario">
         <h1>Agregar detalles de tarjeta</h1>
         <div>
           <label id="name" for="name"> Nombre del titular<span>* </span></label
@@ -62,8 +62,6 @@
             </label>
             <div id="company"></div>
           </div>
-
-          <br />
           <input
             type="number"
             name="fnumber"
@@ -114,12 +112,11 @@
             />
           </div>
         </div>
-      </div>
-
-      <div class="exit">
-        <button id="cancel" type="reset">Cancelar</button>
-        <button id="pay" type="submit">Pagar</button>
-      </div>
+        <div class="exit">
+          <input id="cancel" type="reset" value="Cancelar"></input>
+          <input id="pay" type="submit" value="Pagar"> </input>
+        </div>
+      </form>
     </main>
     <footer></footer>
     <script src="index.js" type="module"></script>

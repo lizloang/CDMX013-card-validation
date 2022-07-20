@@ -37,11 +37,9 @@ const validator = {
 
   company: function (creditCardNumber) {
     if (parseInt(creditCardNumber[0]) === 4) {
-      console.log(creditCardNumber[0]);
-      return true;
+      return 4;
     } else if (parseInt(creditCardNumber[0]) === 5) {
-      console.log(creditCardNumber[0]);
-      return false;
+      return 5;
     }
   },
 };
