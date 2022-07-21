@@ -1,10 +1,5 @@
 import validator from "./validator.js";
 
-/*function hide() {
-  let number = document.getElementById("fnumber");
-  number.value = validator.maskify(number.value);
-}*/
-
 document.getElementById("fnumber").addEventListener("blur", hide);
 document.getElementById("formulario").addEventListener("submit", validNumber);
 let creditCardNumber;
@@ -40,7 +35,6 @@ function companyImg(creditCardNumber) {
 
 function validNumber(event) {
   event.preventDefault();
-  // let creditCardNumber = document.getElementById("fnumber").value;
   const formulario = document.getElementById("formulario");
   if (validator.isValid(creditCardNumber) === true) {
     formulario.submit();
