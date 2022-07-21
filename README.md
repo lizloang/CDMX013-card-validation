@@ -1,4 +1,4 @@
-#. Tarjeta de crédito válida
+# Tarjeta de crédito válida
 ## 1. Resumen
 El proyecto se enfoca en la ventana de pago de una tienda virtual, en la que se ingresa infomormación personal y de la tarjeta de crédito. 
 Aquí se verifica si la tarjeta de crédito es valida, en caso de ser así se muestra un resumen de compra, de lo contrario aparece una alerta para llenar de nuevo los datos.
