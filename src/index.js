@@ -7,8 +7,10 @@ import validator from "./validator.js";
 
 document.getElementById("fnumber").addEventListener("blur", hide);
 document.getElementById("formulario").addEventListener("submit", validNumber);
+let creditCardNumber;
+
 function hide(event) {
-  let creditCardNumber = event.target.value;
+  creditCardNumber = event.target.value;
 
   companyImg(creditCardNumber);
 
@@ -38,11 +40,11 @@ function companyImg(creditCardNumber) {
 
 function validNumber(event) {
   event.preventDefault();
-  let creditCardNumber = document.querySelector("#fnumber").value;
-  const formulario = document.querySelector("#formulario");
-  if (validator.isValid(creditCardNumber)) {
+  // let creditCardNumber = document.getElementById("fnumber").value;
+  const formulario = document.getElementById("formulario");
+  if (validator.isValid(creditCardNumber) === true) {
     formulario.submit();
   } else {
-    alert("El número de tarjeta válido");
+    alert("El número de tarjeta no es válido");
   }
 }

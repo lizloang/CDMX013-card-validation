@@ -28,7 +28,7 @@ const validator = {
       sumaDigitos = sumaDigitos + numberInProcess[i];
     }
 
-    if (sumaDigitos % 10 === 0) {
+    if (creditCardNumber.length > 0 && sumaDigitos % 10 === 0) {
       return true;
     } else {
       return false;
